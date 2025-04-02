@@ -67,16 +67,19 @@ nav a{
 }
 #about-me p {
     text-align: left;
+    padding: 10px;
 }
 
-#about-me img {
-    align-self: flex-end;
+#services{
+    background-color: #fafafa;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    /* text-align: center; */
 }
-
-#services .wrapper{
-    display: flex;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
 }
 
 #services article {
@@ -84,14 +87,14 @@ nav a{
     flex-direction: column;
     align-items: flex-start;
     background-color: #fafafa;
-    padding: 2em;
+    padding: 1rem;
 }
 
 #services a {
     background-color: #000;
     color: #fff;
     padding: 10px 20px;
-    align-items: center;
+    margin-top: auto;
 }
 #services h3{
     text-align: center;
@@ -100,7 +103,7 @@ nav a{
     padding: 2rem;
 }
 
-#work h2, p{
+#work h2, #work p {
     max-width: 700px;
     text-align: center;
     margin: auto;
@@ -145,20 +148,6 @@ nav a{
     color: #000;
 }
 
-#work {
-    padding: 2em;
-}
-
-#work h2, p {
-    text-align: center;
-    max-width: 700px;
-    margin: auto;
-}
-
-#work p {
-    padding: 1em;
-}
-
 
 
 .grid-2{
@@ -169,23 +158,23 @@ nav a{
     "img3 img3 img4 img4 img5 img5";
 }
 
-.grid-2 :nth-child(1) {
+.grid-2 img:nth-child(1) {
     grid-area: img1;
 }
 
-.grid-2 :nth-child(2) {
+.grid-2 img:nth-child(2) {
     grid-area: img2;
 }
 
-.grid-2 :nth-child(3) {
+.grid-2 img:nth-child(3) {
     grid-area: img3;
 }
 
-.grid-2 :nth-child(4) {
+.grid-2 img:nth-child(4) {
     grid-area: img4;
 }
 
-.grid-2 :nth-child(5) {
+.grid-2 img:nth-child(5) {
     grid-area: img5;
 }
 
